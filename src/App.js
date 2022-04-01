@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import AdvancedStatistics from './Components/AdvancedStatistics/AdcancedStatistics';
+import BeforeFooter from './Components/BeforeFooter/BeforeFooter';
+import Footer from './Components/Footer/Footer';
+import Hero from './Components/Hero/Hero';
+import ShortenUrl from './Components/ShortenUrl/ShortenUrl';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <ShortenUrl />
+      <AdvancedStatistics />
+      <BeforeFooter />
+      <Footer />
     </div>
   );
 }

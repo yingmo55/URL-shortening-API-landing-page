@@ -1,0 +1,19 @@
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-burger {
+    border: none;
+    height: 30px;
+    width: 30px;
+}
+
+.button-burger {
+    display: block;
+    margin: 4px 0;
+    height: 2px;
+    width: 15px;
+    background-color: hsl(0, 0%, 75%);
+}

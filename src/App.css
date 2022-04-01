@@ -1,5 +1,6 @@
-.App {
-  text-align: center;
+/* Global Font */
+*{
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-logo {

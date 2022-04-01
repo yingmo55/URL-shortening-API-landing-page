@@ -1,0 +1,6 @@
+.feature-card + .feature-card::before {
+    content: " ";
+    height: 100px;
+    width: 3px;
+    background-color: aquamarine;
+}
