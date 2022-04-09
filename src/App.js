@@ -8,8 +8,7 @@ import ShortenUrl from './Components/ShortenUrl/ShortenUrl';
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <ShortenUrl />
+      <Hero/>
       <AdvancedStatistics />
       <BeforeFooter />
       <Footer />
