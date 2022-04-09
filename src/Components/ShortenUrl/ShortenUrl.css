@@ -1,0 +1,26 @@
+.shortenUrl {
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: hsl(257, 27%, 26%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.shortenUrl input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+
+.shortenUrl button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+}

@@ -1,0 +1,23 @@
+.hero {
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 300px;
+    position: 'relative',
+}
+
+.hero-illustration {
+    height: 100%;
+    max-width: 100%;
+    object-position: right bottom;
+
+    margin: 0 auto;
+}
+
+.hero > * {
+    max-width: 100%;
+    margin: auto 10%;
+    align-self: center;
+    text-align: center;
+}
