@@ -1,0 +1,6 @@
+.button {
+    border: none;
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    padding: 10px 20px;
+}
