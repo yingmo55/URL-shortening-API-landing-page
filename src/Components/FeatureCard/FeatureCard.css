@@ -1,6 +1,40 @@
-.feature-card + .feature-card::before {
+/* .feature-card + .feature-card::before {
     content: " ";
     height: 100px;
     width: 3px;
     background-color: aquamarine;
+} */
+
+.feature-card {
+    width: min(500px, 80%);
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 0px 0px;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.feature-card-icon-container {
+    z-index: 3;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 50%;
+    grid-area: 1 / 1 / span 2 / span 4;
+    display: flex;
+}
+
+.feature-card-icon {
+    margin:auto;
+    padding: 20px;
+}
+
+.feature-content {
+    grid-area: content;
+    grid-area: 2 / 1 / -1 / -1;
+    background-color: white;
+    padding: 50px 10px 10px;
+    border-radius: 5px;
+    text-align: center;
 }
