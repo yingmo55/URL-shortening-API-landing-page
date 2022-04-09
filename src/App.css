@@ -1,8 +1,24 @@
 /* Global Font */
 *{
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+p, span, a, ul, ol, li,
+button {
+  color: hsl(0, 0%, 75%);
+  font-size: 18px;
+}
+
+.App {
+  max-width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
