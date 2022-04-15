@@ -1,13 +1,6 @@
-/* .feature-card + .feature-card::before {
-    content: " ";
-    height: 100px;
-    width: 3px;
-    background-color: aquamarine;
-} */
-
 .feature-card {
     width: min(500px, 80%);
-    margin: 10px auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(4, 1fr); 
@@ -37,4 +30,19 @@
     padding: 50px 10px 10px;
     border-radius: 5px;
     text-align: center;
+}
+
+/* line before cards */
+.feature-card {
+    position: relative;
+}
+
+.feature-card + .feature-card::before {
+    content: " ";
+    height: 100px;
+    width: 3px;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background-color: aquamarine;
 }
