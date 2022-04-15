@@ -1,1 +1,13 @@
- 
+.beforeFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    background: url('../../images/bg-boost-desktop.svg');
+    background-color: hsl(257, 27%, 26%);
+    min-height: 300px;
+}
+
+.beforeFooter h2 {
+    color: white;
+}

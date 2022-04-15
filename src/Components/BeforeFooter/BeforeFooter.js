@@ -1,11 +1,12 @@
 import React from 'react';
 import './BeforeFooter.css';
+import Button from '../Button/Button';
 
 export default function BeforeFooter() {
     return (
-        <div>
+        <div className='beforeFooter'>
             <h2>Boost your links today</h2>
-            <button>Get Started</button>
+            <Button rounded={{borderRadius: 25}}>Get Started</Button>
         </div>
     )
 }
