@@ -3,7 +3,8 @@ import './Footer.css';
 
 export default function Footer() {
 
-return (<footer>
+return (
+<footer>
     <h2>Shortly</h2>
     <p>Features</p>
     <ul>
@@ -24,5 +25,7 @@ return (<footer>
         <li>Carrers</li>
         <li>Contact</li>
     </ul>
+    <div className='footerSocialIcons'>
+    </div>
 </footer>)
 }

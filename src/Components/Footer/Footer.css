@@ -1,1 +1,19 @@
- 
+footer {
+    background-color: hsl(260, 8%, 14%);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > h2,
+footer > p,
+footer li {
+    color: white;
+    text-align: center;
+}
+
+footer > ul {
+    list-style: none;
+    padding: 0;
+} 
