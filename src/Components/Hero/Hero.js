@@ -6,15 +6,6 @@ import Button from '../Button/Button';
 import workingIllust from '../../images/illustration-working.svg';
 
 function Hero() {
-
-  const shortenUrlStyle = {
-    position: 'absolute',
-    width: 'fit-content',
-    bottom: '-50px',
-    margin: '0 auto',
-    textAlign: 'center'
-  }
-
   return (
       <header className="hero" >
         <Navbar />
