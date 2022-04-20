@@ -1,12 +1,12 @@
 .shortenUrl {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 
 .shortenUrlForm {
     margin: auto;
-    width: 80%;
+    width: min(330px, 80%);
     display: flex;
     flex-flow: column wrap;
     background-color: hsl(257, 27%, 26%);
@@ -23,7 +23,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 5px 0;
+    margin-bottom: 15px;
 }
 
 .shortenUrlForm button {
@@ -37,7 +37,7 @@
 
 .shortenedUrls {
     grid-area: 2 / 1 / -1 / -1;
-    background-color: hsl(0, 0%, 75%);
+    background-color: hsl(230, 25%, 95%);
     height: 100%;
     width: 100%;
 }
