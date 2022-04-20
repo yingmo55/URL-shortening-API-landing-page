@@ -1,9 +1,9 @@
 .advancedStatistics {
-    background-color: hsl(0, 0%, 75%);
+    background-color: hsl(230, 25%, 95%);
     padding: 50px 0;
     text-align: center;
 }
 
-.advancedStatistics > p {
-    color: white;
+.advancedStatistics p {
+    color: hsl(250, 3%, 64%);
 }

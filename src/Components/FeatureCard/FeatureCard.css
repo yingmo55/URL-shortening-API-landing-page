@@ -1,5 +1,5 @@
 .feature-card {
-    width: min(500px, 80%);
+    width: 330px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -10,12 +10,18 @@
     align-items: center;
 }
 
+.feature-card p {
+    font-size: 14px;
+}
+
 .feature-card-icon-container {
     z-index: 3;
     background-color: hsl(257, 27%, 26%);
     border-radius: 50%;
     grid-area: 1 / 1 / span 2 / span 4;
     display: flex;
+    height: 90px;
+    aspect-ratio: 1 / 1;
 }
 
 .feature-card-icon {
@@ -27,10 +33,12 @@
     grid-area: content;
     grid-area: 2 / 1 / -1 / -1;
     background-color: white;
-    padding: 50px 10px 10px;
+    padding: 50px 40px 20px;
     border-radius: 5px;
     text-align: center;
+    line-height: 1.6;
 }
+
 
 /* line before cards */
 .feature-card {
