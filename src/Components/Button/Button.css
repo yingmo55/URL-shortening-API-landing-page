@@ -1,6 +1,7 @@
 .button {
     color: white;
     background-color: hsl(180, 66%, 49%);
+    font-size: 16px;
 }
 
 .button:hover {

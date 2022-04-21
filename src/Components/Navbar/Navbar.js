@@ -20,7 +20,7 @@ export default function Navbar() {
     return (
         <>
         <div className="mobile-nav">
-            <img src={logo} alt='shortly logo' />
+            <img src={logo} alt='shortly logo' className='website-logo' />
             <button className="mobile-burger" onClick={toggleMobileNav} >
                 <span className="button-burger"></span>
                 <span className="button-burger"></span>
