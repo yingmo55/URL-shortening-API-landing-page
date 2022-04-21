@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import './ShortenUrl.css';
 
+import ShortenedUrl from "../ShortenedUrl/ShortenedUrl";
+import Button from "../Button/Button";
+
  const ShortenUrl = () => {
      const [ url, setUrl ] = useState('');
      const [ shortenURLs, setShortenURLs ] = useState([]);
@@ -37,20 +40,19 @@ import './ShortenUrl.css';
     <div className='shortenUrl'>
         <div className='shortenUrlForm'>
             <input type="text" placeholder="Shorten a link here..." onChange={setInput} value={url} />
-            <button onClick={shortLink}>
+            <Button onClick={shortLink}>
                 Shorten It!
-            </button>
+            </Button>
         </div>
         <div className="shortenedUrls">
-            {
-                shortenURLs.length > 0 && 
-                    shortenURLs.map((element, index)=> 
-                        <div key={index}>
-                            <p>{element.original}</p>
-                            <p>{element.shorten}</p>
-                        </div> 
-                    )
-            }
+            <div className='urlResults'>
+                {
+                    shortenURLs.length > 0 &&
+                        shortenURLs.map((element, index)=>
+                        <ShortenedUrl originalUrl={element.original} shortenUrl={element.shorten} key={index} />
+                        )
+                }
+            </div>
         </div>
     </div>
     )

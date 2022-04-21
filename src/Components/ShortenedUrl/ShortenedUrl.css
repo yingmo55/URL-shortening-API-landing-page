@@ -1,0 +1,30 @@
+.individualUrls {
+    width: 330px;
+    height: max-content;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.individualUrls hr {
+    width: 100%;
+    border-top: 1px solid hsl(0, 0%, 90%);
+}
+
+.individualUrls p {
+    margin: 0;
+    padding: 10px;
+}
+
+.originalUrl {
+    color: grey;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.shortUrl {
+    color: hsl(180, 66%, 49%);
+}
