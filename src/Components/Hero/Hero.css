@@ -7,17 +7,18 @@
     position: 'relative',
 }
 
-.hero-illustration {
-    height: 100%;
-    max-width: 100%;
-    object-position: right bottom;
-
-    margin: 0 auto;
-}
-
 .hero > * {
-    max-width: 100%;
-    margin: auto 10%;
+    margin: 15px 5%;
     align-self: center;
     text-align: center;
+}
+
+.hero-illustration {
+    height: 52vh;
+    margin: 0 0 20px;
+    object-position: 90px 0px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
 }
