@@ -7,12 +7,16 @@ footer {
 }
 
 footer > h2,
-footer > p,
-footer li {
+footer > p
+ {
     color: white;
     text-align: center;
 }
 
+footer li{
+font-size: 16px;
+color: hsl(257, 7%, 63%);
+}
 footer > ul {
     list-style: none;
     padding: 0;
