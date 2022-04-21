@@ -9,6 +9,8 @@ function Hero() {
 
   const btnStyle = {
     borderRadius: 50,
+    paddingLeft: 40,
+    paddingRight: 40,
   }
 
   return (
