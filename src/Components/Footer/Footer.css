@@ -4,6 +4,7 @@ footer {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 footer > h2,
