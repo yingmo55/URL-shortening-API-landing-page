@@ -66,3 +66,34 @@
  flex-direction: column;
  align-items: center;
 }
+
+@media screen and (min-width: 800px) {
+    .shortenUrlForm {
+        flex-direction: row;
+        align-items: center;
+        justify-content: stretch;
+        position: relative;
+        padding: 0 40px;
+        overflow: hidden;
+    }
+    .shortenInput {
+        margin-bottom: 0;
+    }
+
+    .shortenUrlForm-left {
+        flex-grow: 1;
+        position: relative;
+        padding: 0 20px;
+    }
+
+    .shortenUrlForm button {
+        flex-grow: 0;
+    }
+
+    .warningMsg {
+        position: absolute;
+        margin: 2px 0 0;
+        top: 85px;
+        z-index: 5;
+    }
+}

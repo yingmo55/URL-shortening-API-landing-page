@@ -1,8 +1,8 @@
 .individualUrls {
-    width: 330px;
+    width: 88%;
     height: max-content;
     background-color: white;
-    margin-bottom: 25px;
+    margin-top: 25px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
 }
 
 .originalUrl {
-    color: grey;
+    color: hsl(255, 11%, 22%);
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
