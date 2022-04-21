@@ -12,6 +12,11 @@ export default function Navbar() {
         setShowMobileNav(prev => !prev)
     }
 
+    const signUpBtnStyle = {
+        borderRadius: 25,
+        width: "80%",
+    }
+
     return (
         <>
         <div className="mobile-nav">
@@ -28,9 +33,9 @@ export default function Navbar() {
                     <li>Resources</li>
                 </ul>
                 <hr />
-                <div>
+                <div className='authentication'>
                     <p>Login</p>
-                    <Button>Sign up</Button>
+                    <Button styles={signUpBtnStyle}>Sign up</Button>
                 </div>
             </nav>
         </div>

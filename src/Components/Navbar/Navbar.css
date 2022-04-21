@@ -52,7 +52,9 @@
 }
 
 .nav-menu hr {
-    width: 100%;
+    width: 80%;
+    border: none;
+    border-top: 1px solid hsl(0, 0%, 35%);
 }
 
 .nav-menu ul {
@@ -62,6 +64,15 @@
 
 .nav-menu li {
     padding: 21px 0;
+}
+
+.nav-menu li,
+.nav-menu p {
+    color: white;
+}
+
+.authentication {
+    width: 100%;
 }
 
 @keyframes dropDown {
