@@ -1,19 +1,74 @@
 
 .mobile-nav {
     display: flex;
+    width: calc(100vw - 48px);
     justify-content: space-between;
+    padding: 40px 24px;
+    z-index: 10;
 }
 
 .mobile-burger {
     border: none;
-    height: 30px;
-    width: 30px;
+    min-height: 30px;
+    min-width: 30px;
+    background-color: transparent;
+}
+
+.mobile-burger:hover {
+    cursor: pointer;
 }
 
 .button-burger {
     display: block;
-    margin: 4px 0;
-    height: 2px;
-    width: 15px;
+    margin: 6px 0;
+    height: 3px;
+    width: 25px;
     background-color: hsl(0, 0%, 75%);
+}
+
+.nav-menu-hidden {
+    display: none;
+    opacity: 0;
+}
+
+.nav-menu {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 88%;
+    top: 95px;
+    padding: 40px 0;
+    border-radius: 10px;
+    background-color: hsl(257, 27%, 26%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    animation: dropDown 1s ease-in-out 0s forwards;
+}
+.nav-menu * {
+    overflow: hidden;
+}
+
+.nav-menu hr {
+    width: 100%;
+}
+
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    padding: 21px 0;
+}
+
+@keyframes dropDown {
+    0% {
+        max-height: 1px;
+    }
+    100% {
+        max-height: 415px;
+    }
 }
