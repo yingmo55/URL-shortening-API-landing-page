@@ -1,10 +1,9 @@
-/* .button {
-    border: none;
+.button {
     color: white;
     background-color: hsl(180, 66%, 49%);
-    padding: 10px 20px;
-} */
+}
 
 .button:hover {
     cursor: pointer;
+    background-color: hsl(179, 56%, 75%);
 }

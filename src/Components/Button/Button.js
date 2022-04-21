@@ -8,8 +8,6 @@ export default function Button(props) {
     
     const style = {
         border: 'none',
-        color: 'white',
-        backgroundColor: 'hsl(180, 66%, 49%)',
         padding: '10px 20px',
         borderRadius: 5,
         ...styles,
