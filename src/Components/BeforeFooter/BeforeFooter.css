@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
-    background: url('../../images/bg-boost-desktop.svg');
+    background: no-repeat url('../../images/bg-boost-desktop.svg');
+    background-size: cover;
     background-color: hsl(257, 27%, 26%);
     min-height: 300px;
 }
