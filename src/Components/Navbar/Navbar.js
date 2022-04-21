@@ -28,13 +28,13 @@ export default function Navbar() {
             </button>
             <nav className={ !showMobileNav ? 'nav-menu-hidden' : 'nav-menu' }>
                 <ul>
-                    <li>Features</li>
-                    <li>Pricing</li>
-                    <li>Resources</li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
                 </ul>
                 <hr />
                 <div className='authentication'>
-                    <p>Login</p>
+                    <p><a href="#">Login</a></p>
                     <Button styles={signUpBtnStyle}>Sign up</Button>
                 </div>
             </nav>
