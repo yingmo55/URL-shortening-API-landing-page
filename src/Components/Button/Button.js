@@ -2,13 +2,22 @@ import React from 'react';
 import './Button.css';
 
 export default function Button(props) {
-    const text = props.text;
     const onClick = props.onClick;
     const children = props.children;
-    const rounded = props.rounded;
+    const styles = props.styles;
+    
+    const style = {
+        border: 'none',
+        color: 'white',
+        backgroundColor: 'hsl(180, 66%, 49%)',
+        padding: '10px 20px',
+        borderRadius: 5,
+        ...styles,
+    }
+
     return  (
-    <button className="button" onClick={onClick} style={rounded}>
-        {text || children}
+    <button className="button" onClick={onClick} style={style}>
+        {children}
     </button>
         )
 }

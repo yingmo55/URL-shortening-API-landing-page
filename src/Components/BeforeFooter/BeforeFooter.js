@@ -6,7 +6,7 @@ export default function BeforeFooter() {
     return (
         <div className='beforeFooter'>
             <h2>Boost your links today</h2>
-            <Button rounded={{borderRadius: 25}}>Get Started</Button>
+            <Button styles={{borderRadius: 50, width: 200, padding: '15px 0'}}>Get Started</Button>
         </div>
     )
 }
