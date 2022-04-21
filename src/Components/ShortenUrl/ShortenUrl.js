@@ -6,27 +6,33 @@ import Button from "../Button/Button";
 
  const ShortenUrl = () => {
      const [ url, setUrl ] = useState('');
+     const [ warning, setWarning ] = useState(false);
      const [ shortenURLs, setShortenURLs ] = useState([]);
 
      const shortLink = async () => {
         const endpoint = 'https://api.shrtco.de/v2/'
         const query = 'shorten?url='
 
+        if (!url) {
+            console.log('warning: empty string')
+            setWarning(true)
+            return;
+        }
+
         const result = await fetch(
         `${endpoint}${query}${url}`)
-    .then(response => {
-        if (response.ok) {
-            console.log(response)
-            return response.json()
-        } throw new Error ('Request Failed!')
-    })
-    .then(jsonResponse => {
-        console.log(jsonResponse)
-        const shortenUrl = jsonResponse.result['full_short_link']
-        return shortenUrl
-    })
+            .then(response => {
+                if (response.ok) {
+                    console.log(response)
+                    return response.json()
+                } throw new Error ('Request Failed!')
+            })
+            .then(jsonResponse => {
+                console.log(jsonResponse)
+                const shortenUrl = jsonResponse.result['full_short_link']
+                return shortenUrl
+            })
 
-        console.log(result)
         setShortenURLs(prev => [...prev, {original: url, shorten: result }])
         setUrl('')
      }
@@ -34,15 +40,20 @@ import Button from "../Button/Button";
      const setInput = e => {
          e.preventDefault()
          setUrl(e.target.value)
+         setWarning(false)
      }
 
     return (
     <div className='shortenUrl'>
         <div className='shortenUrlForm'>
-            <input type="text" placeholder="Shorten a link here..." onChange={setInput} value={url} />
+            <input type="text" placeholder="Shorten a link here..." onChange={setInput} value={url} 
+                   className={warning ? 'input-warning shortenInput' : 'shortenInput'} />
+            {warning && 
+                <p className="warningMsg"><em>Please add a link</em></p>}
             <Button onClick={shortLink}>
                 Shorten It!
             </Button>
+            
         </div>
         <div className="shortenedUrls">
             <div className='urlResults'>
