@@ -3,34 +3,26 @@ import './Footer.css';
 import SocialIcon from '../SocialIcon/SocialIcon';
 
 // icons 
-import facebookIcon from './../../images/icon-facebook.svg';
-import instagramIcon from './../../images/icon-instagram.svg';
-import pinterestIcon from './../../images/icon-pinterest.svg';
-import twitterIcon from './../../images/icon-twitter.svg';
-
+import { faFacebookSquare, faTwitter, faPinterest, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
 
     const social = [
         {
-            src: facebookIcon,
+            src: faFacebookSquare,
             href: 'https://www.facebook.com/',
-            alt: 'Facebook icon'
         },
         {
-            src: twitterIcon,
+            src: faTwitter,
             href: 'https://www.twitter.com/',
-            alt: 'Twitter icon'
         },
         {
-            src: pinterestIcon,
+            src: faPinterest,
             href: 'https://www.pinterest.com/',
-            alt: 'Pinterest icon'
         },
         {
-            src: instagramIcon,
+            src: faInstagram,
             href: 'https://www.instagram.com/',
-            alt: 'Instagram icon'
         }
     ]
 
@@ -59,7 +51,7 @@ return (
     <div className='footerSocialIcons'>
          {
             social.map((element, index) => 
-                <SocialIcon src={element.src} href={element.href} alt={element.alt} key={index} />  )
+                <SocialIcon src={element.src} href={element.href} key={index} />  )
             }
     </div>
 </footer>)

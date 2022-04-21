@@ -1,12 +1,13 @@
 import React from 'react';
 import './SocialIcon.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function SocialIcon(props) {
-    const {href, src, alt} = props;
+    const {href, src} = props;
 
     return (
         <a className='socialIcon'href={href} >
-            <img src={src}  alt={alt} />
+            <FontAwesomeIcon icon={src} size="2x" className='icons' />
         </a>
     )
 }
