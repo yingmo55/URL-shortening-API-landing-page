@@ -6,6 +6,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .individualUrls hr {
@@ -27,4 +28,31 @@
 
 .shortUrl {
     color: hsl(180, 66%, 49%);
+}
+
+.shortened-right {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (min-width: 800px) {
+    .individualUrls {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+    }
+    .originalUrl {
+        max-width: 40%;
+    }
+
+    .originalUrl ~ hr {
+        display: none;
+    }
+
+    .shortened-right {
+        flex-direction: row;
+        align-items: center;
+    }
 }

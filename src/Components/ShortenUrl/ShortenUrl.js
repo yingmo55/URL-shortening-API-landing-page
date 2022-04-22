@@ -49,10 +49,9 @@ import Button from "../Button/Button";
             <div className="shortenUrlForm-left">
                 <input type="text" placeholder="Shorten a link here..." onChange={setInput} value={url}
                        className={warning ? 'input-warning shortenInput' : 'shortenInput'} />
-
             </div>
             {warning &&
-                    <p className="warningMsg"><em>Please add a link</em></p>
+                    <p className="warningMsg">Please add a link</p>
                     }
             <Button onClick={shortLink}>
                 Shorten It!

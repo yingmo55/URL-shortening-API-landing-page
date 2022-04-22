@@ -29,25 +29,31 @@ export default function Footer() {
 return (
 <footer>
     <h2>Shortly</h2>
-    <p>Features</p>
-    <ul>
-        <li><a href="/#">Link Shortening</a></li>
-        <li><a href="/#">Branded Links</a></li>
-        <li><a href="/#">Analytics</a></li>
-    </ul>
-    <p>Resources</p>
-    <ul>
-        <li><a href="/#">blog</a></li>
-        <li><a href="/#">Developers</a></li>
-        <li><a href="/#">Support</a></li>
-    </ul>
-    <p>Company</p>
-    <ul>
-        <li><a href="/#">About</a></li>
-        <li><a href="/#">Our Team</a></li>
-        <li><a href="/#">Careers</a></li>
-        <li><a href="/#">Contact</a></li>
-    </ul>
+    <div>
+        <h3>Features</h3>
+        <ul>
+            <li><a href="/#">Link Shortening</a></li>
+            <li><a href="/#">Branded Links</a></li>
+            <li><a href="/#">Analytics</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Resources</h3>
+        <ul>
+            <li><a href="/#">blog</a></li>
+            <li><a href="/#">Developers</a></li>
+            <li><a href="/#">Support</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Company</h3>
+        <ul>
+            <li><a href="/#">About</a></li>
+            <li><a href="/#">Our Team</a></li>
+            <li><a href="/#">Careers</a></li>
+            <li><a href="/#">Contact</a></li>
+        </ul>
+    </div>
     <div className='footerSocialIcons'>
          {
             social.map((element, index) => 

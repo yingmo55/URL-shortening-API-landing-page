@@ -30,15 +30,17 @@ export default function ShortenedUrl(props) {
         <div className="individualUrls">
             <p className="originalUrl">{originalUrl}</p>
             <hr />
-            <p className="shortUrl">{shortenUrl}</p>
-            {!urlCopied && 
-            <Button styles={BtnStyles} onClick={copyUrl}>
-                Copy
-            </Button>}
-            {urlCopied && 
-            <Button styles={BtnStylesCopied} onClick={copyUrl}>
-                Copied!
-            </Button>}
+            <div className='shortened-right'>
+                <p className="shortUrl">{shortenUrl}</p>
+                {!urlCopied &&
+                <Button styles={BtnStyles} onClick={copyUrl}>
+                    Copy
+                </Button>}
+                {urlCopied &&
+                <Button styles={BtnStylesCopied} onClick={copyUrl}>
+                    Copied!
+                </Button>}
+            </div>
         </div>
     )
 }
