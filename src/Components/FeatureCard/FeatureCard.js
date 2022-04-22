@@ -2,9 +2,9 @@ import React from 'react';
 import './FeatureCard.css';
 
 export default function FeatureCard(props) {
-    const { src, title, text } = props;
+    const { src, title, text, id } = props;
 return (
-    <div className='feature-card'>
+    <div className='feature-card' id={id}>
         <div className='feature-card-icon-container'>
             <img src={src} alt={title} className='feature-card-icon' />
         </div>

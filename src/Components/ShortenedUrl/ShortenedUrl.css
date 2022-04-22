@@ -1,11 +1,12 @@
 .individualUrls {
-    width: 330px;
+    width: 83%;
     height: max-content;
     background-color: white;
-    margin-bottom: 25px;
+    margin-top: 25px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .individualUrls hr {
@@ -19,7 +20,7 @@
 }
 
 .originalUrl {
-    color: grey;
+    color: hsl(255, 11%, 22%);
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -27,4 +28,37 @@
 
 .shortUrl {
     color: hsl(180, 66%, 49%);
+}
+
+.shortened-right {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (min-width: 800px) {
+    .individualUrls {
+        max-width: 80%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+    }
+    .originalUrl  {
+        max-width: 40%;
+        padding-left: 30px;
+    }
+    .individualUrls p {
+        max-width: 50%;
+        padding-left: 30px;
+    }
+
+    .originalUrl ~ hr {
+        display: none;
+    }
+
+    .shortened-right {
+        flex-direction: row;
+        align-items: center;
+    }
 }

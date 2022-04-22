@@ -25,8 +25,9 @@ import Button from "../Button/Button";
                 if (response.ok) {
                     console.log(response)
                     return response.json()
-                } throw new Error ('Request Failed!')
-            })
+                } throw new Error ('request failed!')
+            } 
+            )
             .then(jsonResponse => {
                 console.log(jsonResponse)
                 const shortenUrl = jsonResponse.result['full_short_link']
@@ -46,10 +47,13 @@ import Button from "../Button/Button";
     return (
     <div className='shortenUrl'>
         <div className='shortenUrlForm'>
-            <input type="text" placeholder="Shorten a link here..." onChange={setInput} value={url} 
-                   className={warning ? 'input-warning shortenInput' : 'shortenInput'} />
-            {warning && 
-                <p className="warningMsg"><em>Please add a link</em></p>}
+            <div className="shortenUrlForm-left">
+                <input type="text" placeholder="Shorten a link here..." onChange={setInput} value={url}
+                       className={warning ? 'input-warning shortenInput' : 'shortenInput'} />
+            </div>
+            {warning &&
+                    <p className="warningMsg">Please add a link</p>
+                    }
             <Button onClick={shortLink}>
                 Shorten It!
             </Button>

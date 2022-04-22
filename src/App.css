@@ -25,6 +25,7 @@ a {
   font-size: inherit;
   color: inherit;
   text-decoration: none;
+  width: max-content;
 }
 
 a:hover,
