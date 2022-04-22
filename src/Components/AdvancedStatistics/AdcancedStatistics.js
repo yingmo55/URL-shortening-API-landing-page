@@ -10,8 +10,10 @@ import fullyCustomizableIcon from '../../images/icon-fully-customizable.svg'
 export default function AdvancedStatistics() {
     return (
         <section className='advancedStatistics'>
-        <h2>Advanced Statistics</h2>
-        <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+        <div className='as-title'>
+            <h2>Advanced Statistics</h2>
+            <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+        </div>
         <div className='featurecards'>
             <FeatureCard src={brandRecognitionIcon} id='feature1' title="Brand Recognition" text="Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content." />
             <span className='horizontal-line horizontal1'></span>

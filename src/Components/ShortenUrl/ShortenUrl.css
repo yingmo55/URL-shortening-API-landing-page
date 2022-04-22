@@ -62,6 +62,7 @@
 
 @media screen and (min-width: 800px) {
     .shortenUrlForm {
+        max-width: 77%;
         flex-direction: row;
         align-items: center;
         justify-content: stretch;
@@ -69,6 +70,8 @@
         padding: 0 40px;
         overflow: hidden;
         height: 170px;
+        background: no-repeat url('./../../images/bg-shorten-desktop.svg');
+        background-color: hsl(257, 27%, 26%);
     }
     .shortenInput {
         margin-bottom: 0;
@@ -87,7 +90,7 @@
     .warningMsg {
         position: absolute;
         margin: 2px 0 0;
-        top: 85px;
+        top: 110px;
         left: 65px;
     }
 }

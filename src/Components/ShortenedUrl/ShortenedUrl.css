@@ -1,5 +1,5 @@
 .individualUrls {
-    width: 88%;
+    width: 83%;
     height: max-content;
     background-color: white;
     margin-top: 25px;
@@ -38,13 +38,19 @@
 
 @media screen and (min-width: 800px) {
     .individualUrls {
+        max-width: 80%;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding: 5px 10px;
     }
-    .originalUrl {
+    .originalUrl  {
         max-width: 40%;
+        padding-left: 30px;
+    }
+    .individualUrls p {
+        max-width: 50%;
+        padding-left: 30px;
     }
 
     .originalUrl ~ hr {

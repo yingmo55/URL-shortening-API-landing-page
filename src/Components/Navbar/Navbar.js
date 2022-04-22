@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 export default function Navbar() {
     const ref = useRef(null);
     const [isResize, setIsResize] = useState(null);
-    const [ navMenuStyle, setNavMenuStyle ] = useState(null);
+    const [ navMenuStyle, setNavMenuStyle ] = useState(false);
 
     // const toggleMobileNav = () => {
     //     console.log('it should work')

@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+    margin: 40px 25px 20px;
 }
 
 .website-logo {
@@ -35,15 +36,16 @@
 }
 
 .nav-menu {
-    display: block;
+    display: none;
     position: absolute;
     width: 88%;
     top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 40px 0;
     border-radius: 10px;
     background-color: hsl(257, 27%, 26%);
     overflow: hidden;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -88,15 +90,19 @@
 
 @media screen and (min-width: 800px) {
     .website-logo {
-        margin-left: 120px;
+        margin-left: 140px;
         width: max-content;
     }
     .mobile-burger {
         display: none;
     }
 
+    .mobile-nav {
+        margin: 0;
+    }
+
     .nav-menu {
-        margin-right: 120px;
+        margin-right: 140px;
         position: static;
         display: flex;
         flex-flow: row nowrap;
@@ -104,6 +110,7 @@
         justify-content: space-between;
         width: 100%;
         color: hsl(0, 0%, 75%);
+        transform: translateX(0)
     }
 
     .nav-left,

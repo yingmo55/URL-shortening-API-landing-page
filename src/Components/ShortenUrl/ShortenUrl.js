@@ -25,8 +25,9 @@ import Button from "../Button/Button";
                 if (response.ok) {
                     console.log(response)
                     return response.json()
-                } throw new Error ('Request Failed!')
-            })
+                } throw new Error ('request failed!')
+            } 
+            )
             .then(jsonResponse => {
                 console.log(jsonResponse)
                 const shortenUrl = jsonResponse.result['full_short_link']
