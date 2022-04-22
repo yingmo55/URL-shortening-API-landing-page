@@ -57,6 +57,8 @@ I also learned how "one click copy to clipboard" works using JavaScript.
 
 There are still a few minor issues with the current styling. I will attempt fixing them in the future.
 
+My solution is not completely the same as the design images provided. This is also something I need to fix.
+
 In future projects, I may move onto using a library for CSS for consistency.
 
 ### Useful resources
